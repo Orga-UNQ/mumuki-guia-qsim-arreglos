@@ -18,7 +18,7 @@ Veamos un ejemplo. Supongamos que en una porción de memoria tenemos una colecci
 table {border-style:none}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;overflow:hidden;word-break:normal;border-style:none}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;overflow:hidden;word-break:normal;border-style:none}
-.tg .celda{background-color:#ffffc7;text-align:center;vertical-align:top;border-style:none;border-width:0px}
+.tg .celda{background-color:#ffffc7;text-align:center;vertical-align:top;border-style:none}
 .tg .dir{background-color:#ffffff;text-align:center;vertical-align:top;border-style:none}
 </style>
 
