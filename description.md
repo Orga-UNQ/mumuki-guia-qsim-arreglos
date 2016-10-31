@@ -13,3 +13,27 @@ De una arreglo debemos conocer dos cosas:
 Veamos un ejemplo. Supongamos que en una porción de memoria tenemos una colección de pedidos de empanadas. Cada celda contiene la cantidad de empanadas de un pedido, y la colección termina con una celda cuyo contenido es **0**, pues no tiene sentido llevar registro de un pedido de 0 empanadas.
 
 
+
+<style type="text/css">
+table {border-style:none}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;overflow:hidden;word-break:normal;border-style:none}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;overflow:hidden;word-break:normal;border-style:none}
+.tg .celda{background-color:#ffffc7;text-align:center;vertical-align:top;border-style:none;border-width:0px}
+.tg .dir{background-color:#ffffff;text-align:center;vertical-align:top;border-style:none}
+</style>
+
+<table class="tg">
+  <tr>
+    <td class="dir">A000</td> <td class="celda">0010</td>
+  </tr>
+  <tr>
+    <td class="dir">A001</td> <td class="celda">001A</td>
+  </tr>
+  <tr>
+    <td class="dir">A002</td> <td class="celda">0014</td>
+  </tr>
+  <tr>
+    <td class="dir">A003</td> <td class="celda">0000</td>
+  </tr>
+</table>
+
