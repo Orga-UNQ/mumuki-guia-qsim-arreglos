@@ -1,1 +1,9 @@
-`A000`
+examples:
+- name: 'El resultado es correcto'
+  preconditions:
+    equal:
+      R0: '0009'
+      R1: '0004'
+  postconditions:
+    equal:
+      R4: '0002'

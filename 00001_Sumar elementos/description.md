@@ -39,3 +39,16 @@ donde R1 tiene el valor `A000` y luego `A001`, `A002`, y así siguiendo.
 
 La buena noticia es que lo anterior es correcto en Q6, y se denomina **Modo de direccionamiento indirecto por registro**.
 
+### Modo indirecto
+
+El modo indirecto tiene dos formatos:
+
+* por registro, donde la sintaxis es [Rx], siendo Rx un registro de la CPU
+* por memoria, donde la sintaxis es [[0x????]], siendo 0x???? cualquier dirección de memoria.
+
+Veamos un programa que suma entonces los elementos de un arreglo que comienza en 
+`0xA000` y termina con el primer valor cero:
+
+```
+
+```
