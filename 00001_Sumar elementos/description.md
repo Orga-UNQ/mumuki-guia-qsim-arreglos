@@ -10,7 +10,7 @@ ADD R5, [0xA002]
 ADD R5, [0xA003] 
 ```
 
-Pero esto no es correcto porque no conocemos su tamaño, sino que termina en el primer valor 0, es decir que el tamaño del arreglo es dinámico. 
+Pero esto no es correcto porque ademas de no ahorrar trabajo al programador  :muscle: no conocemos su tamaño, sino que termina en el primer valor 0, es decir que el tamaño del arreglo es dinámico. 
 
  :disappointed_relieved:
 
@@ -36,6 +36,8 @@ ADD R5, [R1]
 donde R1 tiene el valor `A000` y luego `A001`, `A002`, y así siguiendo.
 
 La buena noticia es que lo anterior es correcto en Q6, y se denomina **Modo de direccionamiento indirecto por registro**.
+
+ :clap:
 
 ### Modo indirecto
 
