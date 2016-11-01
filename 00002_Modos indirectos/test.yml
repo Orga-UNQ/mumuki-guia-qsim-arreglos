@@ -1,1 +1,11 @@
-ignore_whitespace: true
+examples:
+- name: 'El resultado es correcto'
+  preconditions:
+    memory:
+      A000: '0009'
+      A001: '0008'
+      A002: '0007'
+      A003: '0000'
+  postconditions:
+    equal:
+      R3: '0008'
