@@ -39,24 +39,31 @@ La buena noticia es que lo anterior es correcto en Q6, y se denomina **Modo de d
 
  :clap:
 
-### Modo indirecto
+### A pensar
 
-El modo indirecto tiene dos formatos:
+Suponé que R1 tiene el valof `6777` y que tenés la siguiente porción de memoria
 
-* por registro, donde la sintaxis es [Rx], siendo Rx un registro de la CPU
-* por memoria, donde la sintaxis es [[0x????]], siendo 0x???? cualquier dirección de memoria.
+<style type="text/css">
+table {border-style:none}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;overflow:hidden;word-break:normal;border-style:none}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;overflow:hidden;word-break:normal;border-style:none}
+.tg .celda{background-color:#ffffc7;text-align:center;vertical-align:top;border-style:none}
+.tg .dir{background-color:#ffffff;text-align:center;vertical-align:top;border-style:none}
+</style>
 
-Veamos un programa que suma entonces los elementos de un arreglo que comienza en 
-`0xA000` y termina con el primer valor cero:
+<table class="tg">
+  <tr>
+    <td class="dir">6775</td> <td class="celda">0010</td>
+  </tr>
+  <tr>
+    <td class="dir">6776</td> <td class="celda">001A</td>
+  </tr>
+  <tr>
+    <td class="dir">6777</td> <td class="celda">0014</td>
+  </tr>
+  <tr>
+    <td class="dir">6778</td> <td class="celda">0000</td>
+  </tr>
+</table>
 
-```
-      MOV R3,0x000
-      Mov R0, A000  // inicializamos el indice
-arriba: Mov R1, [R0]
-      CMP R1 , 0x0000
-      JE fin
-      ADD R3, R1
-      ADD R0, 0x0001 
-      JMP arriba
-fin: RET
-```
+> ¿Que valor queda en R4 al ejecutar `MOV R4, [R1]`?
